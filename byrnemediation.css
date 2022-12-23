@@ -1,0 +1,45 @@
+
+.mediation-group-image {
+    background-image: url('mediationgroup.jpeg');
+    background-size: cover;
+}
+
+.fees-image {
+    background-image: url('fees.jpeg');
+    background-size: cover;
+}
+
+.display-0 {
+    font-size: 6.5rem;
+}
+
+.bg-blue-very-dark{
+    background-color: #0d1735;
+}
+.bg-blue-dark {
+    background-color: #213e8c;
+}
+.bg-blue-medium {
+    background-color: #6989e0;
+}
+.bg-blue-light {
+    background-color: #7dabf4;
+}
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
+.google-maps {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}
