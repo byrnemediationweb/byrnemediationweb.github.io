@@ -27,13 +27,13 @@
           xhr.open("POST", "https://usebasin.com/f/6ac25444f87c", true);
           xhr.send(formData);
 
-          let errorAlert = $('<div class="alert alert-danger alert-dismissable fade show d-flex align-items-center" role="alert">'
+          let errorAlert = $('<div class="alert alert-danger alert-dismissible fade show" role="alert">'
           + '    <div>'
           + '       Sorry, something went wrong and your message was not sent. Please email Donald Byrne directly: <a class="text-white" href="mailto:dbyrne@primus.ca">dbyrne@primus.ca</a>'
           + '     </div>'
           + '     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>'
           + '</div>');
-          let successAlert = $('<div class="alert alert-success alert-dismissable fade show d-flex align-items-center" role="alert">'
+          let successAlert = $('<div class="alert alert-success alert-dismissible fade show" role="alert">'
           + '   <div>'
           + 'Your message was submitted.'
           + '    </div>'
