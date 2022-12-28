@@ -51,6 +51,9 @@
             } else {
               $(form).prepend(errorAlert);
             }
+            if(grecaptcha){
+              grecaptcha.reset();
+            }
             form.reset();
           };
         }
