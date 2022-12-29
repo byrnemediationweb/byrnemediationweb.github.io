@@ -77,29 +77,29 @@
             <div class="row">
                 <div class="col-sm-6 offset-sm-3">
                     <h2>Contact Mediators Donald Byrne / Gordon Stille</h2>
-                    <p>To book a mediation session, please contact Cheryl Byrne at cbyrne@primus.ca. <strong>Note: services are only offerred to Ontario residents. We apologize for any inconvenience.</strong></p>
+                    <p>To book a mediation session, please contact Cheryl Byrne at cbyrne@primus.ca. <strong>Note: Our services are offered to residents of Ontario only at this time and we apologize for any inconvenience!</strong></p>
                     <form novalidate class="needs-validation" name="contactForm" method="post">
                         <div class="mb-3">
-                            <label class="form-label">Name</label>
+                            <label class="form-label required">Name</label>
                             <input name="name" required="required" class="form-control" placeholder="John Doe">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Email</label>
+                            <label class="form-label required">Email</label>
                             <input name="email" required="required" type="email" class="form-control" placeholder="name@example.com">
                             <div class="invalid-feedback">
                                 Please submit a valid email address.
                             </div>
                         </div>
                         <div class="mb-3">
-                            <labelclass="form-label">Phone</label>
+                            <label class="form-label required">Phone</label>
                             <input name="phonenumber" required="required" type="tel" class="form-control" placeholder="###-###-####" 
-                            pattern="(\+?1 ?)?[-. ]?[(]?(905|807|705|647|613|519|416|343|289|226)[(]?[-. ]?[0-9]{3}[-. ]?[0-9]{4}">
+                            pattern="(\+?1 ?)?[-. ]?[(]?(905|807|705|647|613|519|416|343|289|226)[)]?[-. ]?[0-9]{3}[-. ]?[0-9]{4}">
                             <div class="invalid-feedback">
                                 Please match the phone number format ###-###-####. <strong>Please note our legal services are offered to residents of Ontario. Your information will not be forwarded and or responded to by our legal team.</strong>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Message</label>
+                            <label class="form-label required">Message</label>
                             <textarea name="message" required="required" class="form-control" rows="3" placeholder="Type your message here"></textarea>
                         </div>
                         <input class="d-none" name="honeypot" />

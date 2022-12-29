@@ -16,24 +16,22 @@
     form.addEventListener(
       "submit",
       function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-        } else {
-          event.preventDefault();
-          event.stopPropagation();
+        $(".contact-alert").remove();
+        event.preventDefault();
+        event.stopPropagation();
+        if (form.checkValidity()) {
           var formData = new FormData(form);
           var xhr = new XMLHttpRequest();
           xhr.open("POST", "https://usebasin.com/f/6ac25444f87c", true);
           xhr.send(formData);
 
-          let errorAlert = $('<div class="alert alert-danger alert-dismissible fade show" role="alert">'
+          let errorAlert = $('<div class="alert alert-danger alert-dismissible fade show contact-alert" role="alert">'
           + '    <div>'
           + '       Sorry, something went wrong and your message was not sent. Please email Donald Byrne directly: <a class="text-white" href="mailto:dbyrne@primus.ca">dbyrne@primus.ca</a>'
           + '     </div>'
           + '     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>'
           + '</div>');
-          let successAlert = $('<div class="alert alert-success alert-dismissible fade show" role="alert">'
+          let successAlert = $('<div class="alert alert-success alert-dismissible fade show contact-alert" role="alert">'
           + '   <div>'
           + 'Your message was submitted.'
           + '    </div>'
