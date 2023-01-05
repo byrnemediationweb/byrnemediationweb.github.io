@@ -11,6 +11,15 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="byrnemediation.css" rel="stylesheet">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YJHJZSHLZS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YJHJZSHLZS');
+</script>
 
 <body>
 
@@ -24,12 +33,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="don.html">Donald Byrne</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gordon.html">Gordon Stille</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="mediation.html">Mediation Process</a>
                         </li>
@@ -65,7 +68,7 @@
                     <p>1568 Carling Ave. Suite 204, Ottawa ON, K1Z 7M4</p>
                     <p>T. 613-722-5292</p>
                     <p>F. 613-722-5292</p>
-                    <p>To book a mediation session, please contact Cheryl Byrne at cbyrne@primus.ca.</p>
+                    <p>To book a mediation session, please fill in all mandatory fields (*)!</p>
                     <form novalidate class="needs-validation" name="contactForm" method="post">
                         <div class="mb-3">
                             <label class="form-label required">Name</label>
@@ -81,9 +84,9 @@
                         <div class="mb-3">
                             <label class="form-label required">Phone</label>
                             <input name="phonenumber" required="required" type="tel" class="form-control" placeholder="###-###-####" 
-                            pattern="(\+?1 ?)?[-. ]?[(]?[0-9]{3}[)]?[-. ]?[0-9]{3}[-. ]?[0-9]{4}">
+                            pattern="(\+?1 ?)?[-. ]?[(]?(365|367|548|705|226|289|613|807|905|437|249|343|416|519|647|867)[)]?[-. ]?[0-9]{3}[-. ]?[0-9]{4}">
                             <div class="invalid-feedback">
-                                Please match the phone number format ###-###-####.
+                                Please match the phone number format ###-###-####. <strong>Please note our legal services are offered to residents of Ontario and northern Canada. Your information will not be forwarded and or responded to by our legal team.</strong>
                             </div>
                         </div>
                         <div class="mb-3">
@@ -128,7 +131,7 @@
             </div>
         
             <div class="text-center border-top pt-3">
-              <p>© 2022 Byrne Mediation</p>
+                <p>© 2022 Byrne Mediation Inc.</p>
             </div>
           </footer>
     </main>

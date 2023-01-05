@@ -11,6 +11,15 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="byrnemediation.css" rel="stylesheet">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YJHJZSHLZS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YJHJZSHLZS');
+</script>
 
 <body>
 
@@ -24,12 +33,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="don.html">Donald Byrne</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gordon.html">Gordon Stille</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="mediation.html">Mediation Process</a>
                         </li>
@@ -57,28 +60,69 @@
             </div>
         </div>
 
-        <div>
-            <div class="row text-center">
-                <div class="col bg-blue-dark py-5 text-white">
-                    <h2><a href="mediation.html" class="text-white">Mediation</a></h2>
-                    <p>Why choose mediation?</p>
-                </div>
-                <div class="col bg-blue-medium py-5 text-white">
-                    <h2><a href="don.html" class="text-white">Donald Byrne</a></h2>
-                    <p>Mediator</p>
-                </div>
-                <div class="col bg-blue-light py-5 text-white">
-                    <h2><a href="gordon.html" class="text-white">Gordon Stille</a></h2>
-                    <p>Mediator</p>
+        <div class="container my-3">
+            <div class="row pb-5">
+                <div class="col-sm-10 offset-sm-1">
+                    <img src="don.jpeg" class="rounded col-md-3 float-md-start mb-3 me-md-5" alt="Portrait of Donald Byrne">
+                    <h2>Donald Byrne</h2>
+                    <p>
+                        Don has practiced law in Ottawa, Ontario for over 37 years. Don's practice has been wide-ranging in his capacity as a general practitioner.
+                    </p>
+                    <p>During his years of practice, Don has acted for both individuals and corporations. Don has also acted both for and against banks and financial institutions.</p>
+                    <p>Throughout the years, Don has never advertised his services and he has grown his practice solely through recommendations and referrals.</p>
+                    <p>Don is active in the following areas of practice:</p>
+                    <ul>
+                        <li>Real Estate (Residential & Commercial)​</li>
+                        <li>Corporate/Commercial</li>
+                        <li>Wills & Estates</li>
+                        <li>Employment matters</li>
+                        <li>Debtor/Creditor/Insolvency</li>
+                        <li>Personal Injury</li>
+                        <li>Product Liability</li>
+                        <li>Condominium Issues</li>
+                        <li>Professional Liability & Negligence</li>
+                        <li>Environmental</li>
+                    </ul>
+                    <h3>Education</h3>
+                    <dl>
+                        <dt>BSc</dt><dd>Carleton University (1976)</dd>
+                        <dt>LLB</dt><dd>Carleton University (1979)</dd>
+                        <dt>Admitted to the Bar of Ontario</dt><dd>(1981)</dd>
+                        <dt>Qualified Mediator</dt><dd>ADR Institute of Ontario (2018)</dd>
+
+                    </dl>
                 </div>
             </div>
-        </div>
 
-        <div class="container my-3">
+
+            <div class="row pb-5">
+                <div class="col-sm-10 offset-sm-1">
+                    <img src="gordon.jpeg" class="rounded col-md-3 float-md-end mb-3 ms-md-5" alt="Portrait of Gordon Stille">
+                    
+                    <h2>Gordon Stille</h2>
+                    <p>Simply put, my principal mission is to help parties in conflict clarify and enhance communication in order to help them develop a mutually agreed upon, sustainable resolution to their dispute. I am ADRC certified with experience resolving multiple Partee conflict between Employees, Employers and Employees, as well as Family Estates conflict using facilitative mediation strategies.</p>    
+                    <p>A thoughtful, common sense style, supported by a collaborative mindset has helped deliver results that meet stakeholder expectations in private and public sectors environments.</p>     
+                    <p>In addition, my leadership has contributed to the growth of entrepreneurs, business managers, customer sales and service teams, trainers, technicians and distribution teams in union and non-union Plumbing, Consumer Packed Goods, Food-service and Healthcare industries.</p>
+                    <p>I have been and continue to volunteer, primarily supporting youth charities and organizations in communities in which we live.</p>    
+                    <p>Over 40 years’ experience in union and non-union environments;</p>
+                    <ul>
+                        <li>Executive Level Sales, Marketing and Operations, (Wholesale & Retail with Fortune 500 and privately held companies)​</li>
+                        <li>Multi-unit Franchisee</li>
+                        <li>Strategic Planning</li>
+                        <li>Business Management training and coaching</li>
+                        <li>Business Development</li>
+                        <li>Multi-sector Negotiation</li>
+                        <li>Change Management</li>
+                        <li>Financial Management, (P&L, Start-up, Fundraising)</li>
+                        <li>Serial volunteer, (currently Board Member, Quinte Bay Gymnastics)</li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="row">
-                <div class="col-sm-6 offset-sm-3">
+                <div class="col-sm-10 offset-sm-1">
                     <h2>Contact Mediators Donald Byrne / Gordon Stille</h2>
-                    <p>To book a mediation session, please contact Cheryl Byrne at cbyrne@primus.ca.</p>
+                    <p>To book a mediation session, please fill in all mandatory fields (*)!</p>
                     <form novalidate class="needs-validation" name="contactForm" method="post">
                         <div class="mb-3">
                             <label class="form-label required">Name</label>
@@ -94,9 +138,9 @@
                         <div class="mb-3">
                             <label class="form-label required">Phone</label>
                             <input name="phonenumber" required="required" type="tel" class="form-control" placeholder="###-###-####" 
-                            pattern="^(\+?1 ?)?[-. ]?[(]?[0-9]{3}[)]?[-. ]?[0-9]{3}[-. ]?[0-9]{4}$">
+                            pattern="(\+?1 ?)?[-. ]?[(]?(365|367|548|705|226|289|613|807|905|437|249|343|416|519|647|867)[)]?[-. ]?[0-9]{3}[-. ]?[0-9]{4}">
                             <div class="invalid-feedback">
-                                Please match the phone number format ###-###-####.
+                                Please match the phone number format ###-###-####. <strong>Please note our legal services are offered to residents of Ontario and northern Canada. Your information will not be forwarded and or responded to by our legal team.</strong>
                             </div>
                         </div>
                         <div class="mb-3">
@@ -110,6 +154,7 @@
                     </form>
                 </div>
             </div>
+
         </div>
 
         <footer class="py-5 px-4 bg-blue-dark text-white">
@@ -135,7 +180,7 @@
             </div>
         
             <div class="text-center border-top pt-3">
-              <p>© 2022 Byrne Mediation</p>
+                <p>© 2022 Byrne Mediation Inc.</p>
             </div>
           </footer>
     </main>
