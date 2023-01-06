@@ -22,7 +22,7 @@
         if (form.checkValidity()) {
           var formData = new FormData(form);
           var xhr = new XMLHttpRequest();
-          xhr.open("POST", "https://usebasin.com/f/6ac25444f87c", true);
+          xhr.open("POST", "https://usebasin.com/f/cd6582328a20", true);
           xhr.send(formData);
 
           let errorAlert = $('<div class="alert alert-danger alert-dismissible fade show contact-alert" role="alert">'
