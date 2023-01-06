@@ -49,7 +49,7 @@
                             <a class="nav-link" href="fees.html">Fees</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="index.html#contactForm">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -82,10 +82,47 @@
             </div>
         </div>
         <div class="container my-3">
-
-            <div class="row py-5">
-                <div class="col-sm-10 offset-sm-1 text-center">
-                    <a href="contact.html" class="hero">Click here to contact us and book a mediation session.</a> 
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>
+                        Get in Touch
+                    </h2>
+                    <p>1568 Carling Ave. Suite 204, Ottawa ON, K1Z 7M4</p>
+                    <p>T. 613-722-5292 | F. 613-722-5292</p>
+                    <p>To book a mediation session, please fill in all mandatory fields (*)!</p>
+                    <p>Please note our legal services are offered to residents of Ontario and northern Canada. Your information will not be forwarded and or responded to by our legal team.</p>
+                    <form id="contactForm" novalidate class="needs-validation" name="contactForm" method="post">
+                        <div class="mb-3">
+                            <label class="form-label required">Name</label>
+                            <input name="name" required="required" class="form-control" placeholder="John Doe">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label required">Email</label>
+                            <input name="email" required="required" type="email" class="form-control" placeholder="name@example.com">
+                            <div class="invalid-feedback">
+                                Please submit a valid email address.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label required">Phone</label>
+                            <input name="phonenumber" required="required" type="tel" class="form-control" placeholder="###-###-####" 
+                            pattern="(\+?1 ?)?[-. ]?[(]?(365|367|548|705|226|289|613|807|905|437|249|343|416|519|647|867)[)]?[-. ]?[0-9]{3}[-. ]?[0-9]{4}">
+                            <div class="invalid-feedback">
+                                Please match the phone number format ###-###-####. <strong>Please note our legal services are offered to residents of Ontario and northern Canada. Your information will not be forwarded and or responded to by our legal team.</strong>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label required">Message</label>
+                            <textarea name="message" required="required" class="form-control" rows="3" placeholder="Type your message here"></textarea>
+                        </div>
+                        <input class="d-none" name="honeypot" />
+                        <div class="g-recaptcha mb-3" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Clear</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 google-maps mt-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27445.205189617638!2d-75.7648493018674!3d45.37511413551238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce06a2d422ed57%3A0x1e0000eb24ecc537!2sDonald%20J%20Byrne!5e0!3m2!1sen!2sca!4v1671824889301!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
