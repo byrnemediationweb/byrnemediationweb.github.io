@@ -45,3 +45,11 @@ body {
     content:"*";
     color:red;
 }
+
+.text-yellow {
+    color: yellow;
+}
+
+.table-fixed {
+    table-layout: fixed;
+}
