@@ -69,6 +69,7 @@ var captchaSubmitted = false;
             }
             if(grecaptcha){
               grecaptcha.reset();
+              captchaSubmitted = false;
             }
             form.reset();
           };
