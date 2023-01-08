@@ -1,3 +1,4 @@
+var captchaSubmitted = false;
 (function () {
   "use strict";
 
@@ -25,9 +26,18 @@
         }
 
         $(".contact-alert").remove();
+        if(!captchaSubmitted){
+          let captchaAlert = $('<div class="alert alert-danger alert-dismissible fade show contact-alert" role="alert">'
+          + '    <div>'
+          + '       You must complete the Captcha checkbox.'
+          + '     </div>'
+          + '     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>'
+          + '</div>');
+          $(form).prepend(captchaAlert);
+        }
         event.preventDefault();
         event.stopPropagation();
-        if (form.checkValidity()) {
+        if (captchaSubmitted && form.checkValidity()) {
           var formData = new FormData(form);
           var xhr = new XMLHttpRequest();
           xhr.open("POST", "https://usebasin.com/f/cd6582328a20", true);
@@ -69,3 +79,9 @@
     );
   });
 })();
+
+function captchaCallback(){
+  if(grecaptcha){
+    captchaSubmitted = true;
+  }
+}
