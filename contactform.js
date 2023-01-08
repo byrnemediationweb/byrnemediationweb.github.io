@@ -16,6 +16,14 @@
     form.addEventListener(
       "submit",
       function (event) {
+
+        var phoneNumber = document.getElementById("phoneNumber").value;
+        if(phoneNumber){
+          document.getElementById("areaCodeWarning").classList.remove("d-none");
+        } else {
+          document.getElementById("areaCodeWarning").classList.add("d-none");
+        }
+
         $(".contact-alert").remove();
         event.preventDefault();
         event.stopPropagation();

@@ -105,10 +105,10 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label required">Phone</label>
-                            <input name="phonenumber" required="required" type="tel" class="form-control" placeholder="###-###-####" 
+                            <input id="phoneNumber" name="phonenumber" required="required" type="tel" class="form-control" placeholder="###-###-####" 
                             pattern="(\+?1 ?)?[-. ]?[(]?(365|367|548|705|226|289|613|807|905|437|249|343|416|519|647|867)[)]?[-. ]?[0-9]{3}[-. ]?[0-9]{4}">
                             <div class="invalid-feedback">
-                                Please match the phone number format ###-###-####. <strong>Please note your message will not be forwarded to our legal team as your coordinates lie outside our Ontario and/or Northern Canada service area. Thank you for your interest in our services!</strong>
+                                Please match the phone number format ###-###-####. <strong id="areaCodeWarning">Please note your message will not be forwarded to our legal team as your coordinates lie outside our Ontario and/or Northern Canada service area. Thank you for your interest in our services!</strong>
                             </div>
                         </div>
                         <div class="mb-3">
